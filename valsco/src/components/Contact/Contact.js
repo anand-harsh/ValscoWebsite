@@ -123,7 +123,7 @@ function Contact() {
               <p className="mobile">
                 At Valsco , we specialize in crafting custom software solutions
                 tailored to our clients' unique needs. Our services extend
-                beyond development, encompassing consulting, training, and
+                beyond development ,encompassing consulting, training, and
                 support to ensure our clients achieve their visions. Innovation
                 is our hallmark, as we continuously explore new technologies to
                 create efficient, user-friendly solutions. With a team of

@@ -550,10 +550,11 @@ $blueColor:rgba(33,150,243,1); */
   }
   .abtus .info p{
     
-    padding-left:10px;
-    padding-right:7px;
-   
-   text-align: justify;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 6px;
+    align-items:center;
+ 
     
   }
 }
