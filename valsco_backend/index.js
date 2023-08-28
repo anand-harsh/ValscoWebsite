@@ -4,7 +4,7 @@ const transporter = require('./email')
 require('dotenv').config();
 const cors = require('cors')
 let port = process.env.PORT || 5000;
-let url = 'https://www.valscotech.com/#productspage'
+let url = 'https://www.valscotech.com/'
 
 
 app.use(express.json());
