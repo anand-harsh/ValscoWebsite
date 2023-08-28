@@ -7,6 +7,7 @@ import validator from "validator";
 import { Helmet } from "react-helmet-async";
 
 const backendURL = "https://valscobackendtest.onrender.com";
+// const backendURL = "http://localhost:5000"
 
 const PHONE_REGEX = new RegExp(
   /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,3}[-\s\.]?[0-9]{1,4}[-\s\.]?[0-9]{1,4}$/
@@ -52,7 +53,7 @@ function Contact() {
           company: newContact.company,
         }),
       });
-      console.log(response);
+      // console.log(response);
 
       setIsSuccess(true);
       setIsValid(true);
@@ -71,7 +72,7 @@ function Contact() {
         body: JSON.stringify({ name: savedName, email: savedEmail }),
       });
 
-      console.log(response2);
+      // console.log(response2);
     } catch (error) {
       alert(`The Following Error Occured: ${error}.\nKindly Try Again!`);
       setNewContact({ name: "", email: "", number: "", company: "" });
@@ -81,7 +82,7 @@ function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Valsco</title>
+        <title>VALSCO</title>
         <meta
           name="description"
           content="Ready to take your business to the next level? Contact Valsco today and discover how our cutting-edge software solutions can empower your success."

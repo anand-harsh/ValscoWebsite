@@ -25,7 +25,7 @@ export default function BlogHome(props) {
   return (
     <>
       <Helmet>
-        <title>Blog Home - Valsco Technology</title>
+        <title>Blogs - VALSCO</title>
         <meta
           name="description"
           content="Explore a collection of insightful blog posts related to technology, innovation, and more. Stay updated with the latest trends and discussions in the tech world."

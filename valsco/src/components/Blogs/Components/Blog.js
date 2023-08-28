@@ -24,7 +24,7 @@ const Blog = (currentElement, authenticated) => {
   return (
     <>
       <Helmet>
-        <title>{title}</title>
+        <title>Blogs | VALSCO</title>
         <meta
           name="description"
           content="Experience an interactive and effective blog-making experience with Valsco Technology's modern software solution."

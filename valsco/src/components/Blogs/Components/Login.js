@@ -30,7 +30,7 @@ export default function Login(props) {
   return (
     <>
       <Helmet>
-        <title>Login - Valsco Technology Blog</title>
+        <title>Login - VALSCO Blog</title>
         <meta
           name="description"
           content="Login to create your own blogs and join the Valsco Technology blogging community."

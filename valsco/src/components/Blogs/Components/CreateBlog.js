@@ -71,7 +71,7 @@ export default function CreateBlog(props) {
   return (
     <>
       <Helmet>
-        <title>Create a Blog - Valsco Technology</title>
+        <title>Create Blogs | VALSCO</title>
         <meta
           name="description"
           content="Create and submit your own blog post on Valsco Technology's platform. Share your insights and opinions on various tech topics and innovations."

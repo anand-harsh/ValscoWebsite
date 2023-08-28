@@ -66,7 +66,7 @@ const DetailedBlog = (props) => {
   return (
     <>
       <Helmet>
-        <title>{title} - Valsco Technology Blog</title>
+        <title>Detailed Blog | VALSCO - {title}</title>
         <meta name="description" content={postText} />
       </Helmet>
       <section className="detailed-blog">
