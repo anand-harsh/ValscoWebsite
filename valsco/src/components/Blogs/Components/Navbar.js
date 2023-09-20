@@ -4,9 +4,9 @@ import { signOut } from "firebase/auth";
 import { auth, provider } from "../firebase-config";
 import "../../Blogs/Blogs.css";
 import "./StyleBlog.css";
+import { Helmet } from "react-helmet-async";
 
-export default function Navbar(props){
-  
+export default function Navbar(props) {
   let [click, setClick] = useState(true);
   let navigate = useNavigate();
   const signUserOut = () => {
@@ -25,6 +25,9 @@ export default function Navbar(props){
   };
   return (
     <>
+      <Helmet>
+        <title>Valsco Technology Blog</title>
+      </Helmet>
       <header>
         <a
           href="#main-menu"

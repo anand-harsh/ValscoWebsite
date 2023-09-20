@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+   
   }
 
   .mock1 {
@@ -103,14 +104,14 @@
 
 }
 
-@media screen and (max-width: 622px) {
+@media screen and (max-width: 768px) {
   .lap {
     overflow: hidden;
   }
 
   .lap1 {
     width: 100vw;
-    height: 66vh;
+    height: 50vh;
 
   }
 
@@ -120,13 +121,13 @@
         align-items: center;
         position: relative;
 
-        height: 66vh;
+        height: 50vh;
   }
 
   .mock1 {
     transition: 0.6s;
     width: 130px;
-    height: 300px;
+    height: 250px;
 
   }
 
@@ -141,8 +142,8 @@
   }
 
   .iphone2:hover {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     transition: 0.5s;
   }
 
@@ -168,8 +169,7 @@
 
   .fulls {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     position: relative;
     width: 100vw;
     height: 36vh;
@@ -178,7 +178,7 @@
   .mock1 {
     transition: 0.6s;
     width: 100px;
-    height: 245px
+    height: 200px
   }
 
   .iphone1 {

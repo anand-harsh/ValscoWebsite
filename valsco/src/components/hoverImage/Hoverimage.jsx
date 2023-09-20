@@ -36,17 +36,20 @@ const HoverImage = () => {
     transform: isHovered ? 'scale(1)' : 'scale(0)',
   };
 
+ 
+
   return (
     <Link to="aboutuspage">
-    <div  style={{display:'flex',justifyContent:'center',margin:'100px'}}>
+    <div className='softimagecontainer'>
     <div className='softimage'
       ref={containerRef}
     >
-      <img
-        src={gif}
-        alt="HoverImage"
-        style={imageStyle}
-      />
+    <img
+    src={gif}
+    alt="HoverImage"
+    style={{ ...imageStyle, ...(window.innerWidth <= 768 ? { width: '200px', height: '200px',top:'-10.8px',left:"2px" } : {}) }}
+    className={window.innerWidth <= 768 ? 'responsive-image' : ''}
+  />
     </div>
     </div>
     </Link>

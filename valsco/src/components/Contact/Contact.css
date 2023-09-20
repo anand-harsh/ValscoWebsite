@@ -89,6 +89,11 @@ body {
   width: 50%;
   height: 50%;
   box-shadow: 10px 20px 40px grey;
+  margin-left: 40px;
+}
+
+.mobile{
+  display: none;
 }
 
 
@@ -260,6 +265,28 @@ body {
   margin-left: 5%;
   display: grid;
 }
+.bottom .privacy a[href="mailto:connect@valscotech.com"] {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.bottom .privacy a[href="mailto:connect@valscotech.com"]::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: silver; 
+  transition: width 1s ease-in-out; 
+  line-height: 2px;
+}
+
+.bottom .privacy a[href="mailto:connect@valscotech.com"]:hover::before {
+  width: 100%;
+}
+
 .bottom p4 {
   margin-top: 4%;
   font-size: 1vw;
@@ -522,7 +549,13 @@ $blueColor:rgba(33,150,243,1); */
     margin-top: 5%;
   }
   .abtus .info p{
-    text-align: center;
+    
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 6px;
+    align-items:center;
+ 
+    
   }
 }
 @media screen and (min-width: 576px) and (max-width: 900px) {
@@ -611,8 +644,15 @@ input:focus:invalid{
 }
 
 #successfulMessage{
-  font-size: large;
-  color: green;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  width:100%;
+}
+
+.bottom .privacy p1 a{
+  text-decoration: none;
+  color: silver;
 }
 
 #formSubmitButton{
@@ -653,8 +693,41 @@ input:focus:invalid{
   .abtus .info .people{
     margin-top: 10%;
   }
-}
 
+  .abtus .info img {
+    
+    margin-left: 0px;
+  }
+  
+}
+@media screen and (max-width: 769px){
+   .peoppara{
+     display: none;
+   }
+   .mobile{
+    display: flex;
+   }
+   .bottom .privacy p1{
+      font-size: larger;
+   }
+   #formSubmitButton{
+      font-size: 2.5vw;
+   }
+   .form .p-contact {
+      width: 85%;
+   }
+   .bottom #ide{
+    width: 50%;
+    font-size: x-large;
+   }
+   .bottom #tell{
+    width: 50%;
+    font-size: x-large;
+   }
+   .bottom .privacy p4{
+      font-size:x-small;
+   }
+} 
 /* Additional media queries for further responsiveness */
 @media screen and (max-width: 576px) {
   /* .card-group {
@@ -691,10 +764,16 @@ input:focus:invalid{
     .card{
       width: 50%;      
     }
+    .card-body{
+      margin-bottom: 0%;
+    }
+    .form{
+      margin-top: 5%;
+    }
     .card-group{
       display: flex;
       flex-direction:column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
     }
 }

@@ -9,17 +9,24 @@ import { Link } from "react-router-dom";
 // import "../../Blogs/Blogs.css";
 import "./StyleBlog.css";
 import { useBlogContext } from "../context/BlogContext";
+import { Helmet } from "react-helmet-async";
 SwiperCore.use([EffectCoverflow, Autoplay, Pagination]);
 
 export default function Slider({ authenticated }) {
   const { isLoading, blogs, getPosts } = useBlogContext();
   const postsCollectionRef = collection(db, "blogPosts");
-  const blogsFinal = blogs.length>3 ? [blogs[0],blogs[1],blogs[2]] : blogs;
-  
+  const blogsFinal = blogs.length > 3 ? [blogs[0], blogs[1], blogs[2]] : blogs;
 
   if (isLoading === true) {
     return (
-      <div className="loader"><div className="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+      <div className="loader">
+        <div className="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     );
   }
 
@@ -29,9 +36,15 @@ export default function Slider({ authenticated }) {
     window.location.reload(false);
   };
 
-
   return (
     <>
+      <Helmet>
+        <title>Valsco Technology - Blog Slider</title>
+        <meta
+          name="description"
+          content="Explore the latest blog posts in the Valsco Technology blog carousel. Swipe through the blog cards to read interesting content."
+        />
+      </Helmet>
       <div className="swiper-container">
         <Swiper
           effect={"coverflow"}
@@ -43,8 +56,8 @@ export default function Slider({ authenticated }) {
             stretch: 0,
             depth: 150,
             modifier: 1,
-            slideShadows: false
-          }}
+            slideShadows: false,
+          }}
           pagination={false}
           className="mySwiper"
         >
@@ -53,8 +66,12 @@ export default function Slider({ authenticated }) {
               <SwiperSlide className="swiperslide" key={currentElement.id}>
                 <section className="swiper-slide-card">
                   <h3 className="swiper-slide-title">{currentElement.title}</h3>
-                  <p className="swiper-slide-desc">{currentElement.postText.slice(0, 250)}...</p>
-                  <p className="swiper-slide-author">@{currentElement.author.name}</p>
+                  <p className="swiper-slide-desc">
+                    {currentElement.postText.slice(0, 250)}...
+                  </p>
+                  <p className="swiper-slide-author">
+                    @{currentElement.author.name}
+                  </p>
                   <div className="blog-card-btn-div">
                     <Link
                       to={`/DetailedBlog/${currentElement.id}`}

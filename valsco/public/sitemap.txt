@@ -1,0 +1,5 @@
+https://valscotech.com/#productspage
+https://valscotech.com/#aboutuspage
+https://valscotech.com/BlogHome
+https://valscotech.com/Login
+https://valscotech.com/DetailedBlog/:ID

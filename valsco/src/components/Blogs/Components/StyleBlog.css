@@ -300,7 +300,9 @@ Swiper {
 }
 @media screen and (max-width: 970px) {
   .swiper-slide-desc{
-    height: 180px;
+    height: 120px;
+   
+   
   }
 }
 @media screen and (max-width: 340px) {
