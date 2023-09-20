@@ -1,0 +1,199 @@
+@media screen and (max-width: 2000px) {
+  .lap {
+    overflow: none;
+  }
+
+  .lap1 {
+
+    width: 100vw;
+    height: 79vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .fulls {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+   
+  }
+
+  .mock1 {
+    transition: 0.6s;
+    width: 280px;
+
+  }
+
+  .iphone1 {
+    transition: 5s;
+    transform: translateX(95px);
+    z-index: 9999999;
+  }
+
+  .iphone2 {
+    transition: 10000s;
+  }
+
+  .iphone2:hover {
+    margin-left: 15%;
+    margin-right: 15%;
+    transition: 0.5s;
+  }
+
+  .iphone3 {
+    transition: 1s;
+    transform: translateX(-95px);
+    z-index: 9999999;
+  }
+}
+
+
+
+@media screen and (max-width: 940px) {
+  .lap {
+    overflow: hidden;
+  }
+
+  .lap1 {
+
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .fulls {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+
+  }
+
+  .mock1 {
+    transition: 0.6s;
+    width: 180px;
+    height: 400px;
+
+  }
+
+  .iphone1 {
+    transition: 5s;
+    transform: translateX(70px);
+    z-index: 9999999;
+  }
+
+  .iphone2 {
+    transition: 10000s;
+  }
+
+  .iphone2:hover {
+    margin-left: 15%;
+    margin-right: 15%;
+    transition: 0.5s;
+  }
+
+  .iphone3 {
+    transition: 1s;
+    transform: translateX(-70px);
+    z-index: 9999999;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .lap {
+    overflow: hidden;
+  }
+
+  .lap1 {
+    width: 100vw;
+    height: 50vh;
+
+  }
+
+  .fulls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        height: 50vh;
+  }
+
+  .mock1 {
+    transition: 0.6s;
+    width: 130px;
+    height: 250px;
+
+  }
+
+  .iphone1 {
+    transition: 1s;
+    transform: translateX(40px);
+    z-index: 9999999;
+  }
+
+  .iphone2 {
+    transition: 10000s;
+  }
+
+  .iphone2:hover {
+    margin-left: 15%;
+    margin-right: 15%;
+    transition: 0.5s;
+  }
+
+  .iphone3 {
+    transition: 1s;
+    transform: translateX(-40px);
+    z-index: 9999999;
+  }
+
+}
+
+@media screen and (max-width: 484px) {
+  .lap {
+    overflow: none;
+  }
+
+  .lap1 {
+    width: 100vw;
+    height: 42vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .fulls {
+    display: flex;
+    
+    position: relative;
+    width: 100vw;
+    height: 36vh;
+  }
+
+  .mock1 {
+    transition: 0.6s;
+    width: 100px;
+    height: 200px
+  }
+
+  .iphone1 {
+    transition: 1s;
+    z-index: 9999999;
+  }
+
+  .iphone2 {
+    transition: 10000s;
+  }
+
+  .iphone3 {
+    transition: 1s;
+    z-index: 9999999;
+  }
+
+
+}

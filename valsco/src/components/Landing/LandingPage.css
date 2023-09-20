@@ -1,400 +1,120 @@
-#row1 {
-  width: 100%;
-  padding-left: 10px;
-  padding-top: 10px;
-  justify-content: space-around;
-  height: 65px;
-}
 
 .wrapper {
-  background: hsla(191, 75%, 60%, 1);
-  background: linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 17%, 50%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    rgb(29, 87, 167) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    rgb(13, 71, 147) 100%
-  );
-  opacity: 0.95;
+  background: rgb(5, 67, 79);
+background: linear-gradient(
+  90deg,
+  rgba(26, 165, 193, 0.7) 0%,
+  rgba(57, 155, 177, 0.7) 90%,
+);
+background: -moz-linear-gradient(
+  90deg,
+  rgba(40, 120, 149, 0.7) 90%,
+  rgba(5, 67, 79, 0.7) 100%
+);
+background: -webkit-linear-gradient(
+  90deg,
+  /* rgba(26, 165, 193, 0.7) 0%, */
+  rgb(253, 254, 254) 5%,
+  rgb(122, 205, 235) 70%,
+  rgba(0, 88, 183, 0.785) 100%
+);
+  opacity: 1;
 }
-
-.cust {
-  position: absolute;
-  width: 20px;
-  margin-left: 1250px;
-  margin-top: -200px;
-}
-
+/* #pl .container-fluid{
+  background-color: black;
+} */
 .para {
-  margin-top: 15%;
-  margin-left: 10%;
+  /* width: fit-content; */
+  margin-top: 4%;
+  /* margin-left: 10%; */
+  font-family: sans-serif;
+}
+.para span{
+  font-weight: 600;
+  font-size: 4rem;
+}
+.para p{
+  width:25vw;
+}
+.main{
+  padding-top: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:15rem;
+
 }
 
 .para1 {
-  width: 80%; /* Adjust the percentage value to your desired width */
-  max-width: 600px; /* Set a maximum width to limit the box size */
-  /* Adjust the height to your desired value */
-  overflow: auto;
+  font-family: sans-serif;
+  width:50%;
 }
 
-.img {
-  width: 30%;
-  margin-left: 10%;
-  margin-top: 18%;
-}
-.img img {
-  width: 50%;
+.img1{
+  display: flex;
+  justify-content: center;
+  scale: 1.1;
+  
 }
 .front {
   display: flex;
-  padding-bottom: 10%;
+  padding-bottom: 0;
 }
 .heading {
-  padding-top: 5px;
+  color: black;
   font-weight: bold;
   font-size: 20px;
 }
-
-#homeb {
-  padding-left: 25px;
-  padding-right: 25px;
-  transition: 1s, background-color 1.5s, color 1s, font-weight 1s,
-    border-radius 1.5s;
+@media (max-width: 768px) {
+#root{
+  width: 100%;
 }
-
-#homeb:hover {
-  background: hsla(191, 75%, 60%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1);
-  color: aliceblue;
-  font-weight: bold;
-  border-radius: 50px;
-  transform: scale(1.3);
-  box-shadow: 2px 2px 2px rgb(0, 37, 149);
-  z-index: 2;
-}
-
-#contactus {
-  background: hsla(191, 75%, 60%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1);
-  color: aliceblue;
-  transition: 1s, background-color 1s, color 1s, font-weight 1s,
-    border-radius 1s;
-}
-
-/* .content {
-  background: hsla(191, 75%, 60%, 1);
-
-  background: linear-gradient(90deg, #4cc9e6 0%, #210cac 100%);
-
-  background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
-
-  background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
-} */
-
-#contactus:hover {
-  background-color: aliceblue;
-  font-weight: bold;
-  border-radius: 50px;
-  transform: scale(1.3);
-  box-shadow: 2px 2px 2px rgb(0, 37, 149);
-  z-index: 2;
-}
-
-#productsb {
-  transition: 1s, background-color 1s, color 1s, font-weight 1s,
-    border-radius 1s;
-}
-
-#productsb:hover {
-  background: hsla(191, 75%, 60%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1);
-  color: aliceblue;
-  font-weight: bold;
-  border-radius: 50px;
-  transform: scale(1.3);
-  box-shadow: 2px 2px 2px rgb(0, 37, 149);
-  z-index: 2;
-}
-
-#aboutusb {
-  transition: 1s, background-color 1s, color 1s, font-weight 1s,
-    border-radius 1s;
-}
-
-#aboutusb:hover {
-  background: hsla(191, 75%, 60%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(191, 75%, 60%, 1) 0%,
-    hsla(248, 87%, 36%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1);
-  color: aliceblue;
-  font-weight: bold;
-  border-radius: 50px;
-  transform: scale(1.3);
-  box-shadow: 2px 2px 2px rgb(0, 37, 149);
-  z-index: 2;
-}
-
-#tl {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 100%;
-}
-
-#coll {
-  height: 100%;
-}
-
-.navbar-toggler {
-  display: none;
-}
-
-@media only screen and (max-width: 600px) {
-  .a {
-    display: none;
-  }
-
-  #tl {
-    height: 110%;
-    width: 110%;
-    margin-right: 0;
-    padding-right: 0;
-    margin-left: 200%;
-  }
-
-  .heading {
-    font-size: large;
-  }
-
-  .up {
-    text-align: center;
-  }
-
-  .navbar-toggler {
-    display: contents;
-  }
-
-  #aboutusb:hover {
-    background: hsla(191, 75%, 60%, 1);
-
-    background: linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    background: -moz-linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    background: -webkit-linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1);
-    color: aliceblue;
-    font-weight: bold;
-    transform: scale(1);
-  }
-
-  #productsb:hover {
-    background: hsla(191, 75%, 60%, 1);
-
-    background: linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    background: -moz-linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    background: -webkit-linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1);
-    color: aliceblue;
-    font-weight: bold;
-    transform: scale(1);
-  }
-
-  #contactus {
-    background: hsla(191, 75%, 60%, 1);
-
-    background: linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    background: -moz-linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    background: -webkit-linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1);
-    color: aliceblue;
-    transition: 1s, background-color 1s, color 1s, font-weight 1s,
-      border-radius 1s;
-  }
-
-  #contactus:hover {
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    transform: scale(1);
-  }
-
-  #homeb:hover {
-    background: hsla(191, 75%, 60%, 1);
-
-    background: linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    background: -moz-linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    background: -webkit-linear-gradient(
-      90deg,
-      hsla(191, 75%, 60%, 1) 0%,
-      hsla(248, 87%, 36%, 1) 100%
-    );
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1);
-    color: aliceblue;
-    font-weight: bold;
-    transform: scale(1);
-  }
-
-  .bg-white {
+.wraper{height:80vh;}
+  .img1{
     display: flex;
+    justify-content: center;
+    scale: 0.7;
+    
+  }
+  .front{
+
+    display: flex;
+    margin: 0px;
+    overflow: hidden;
+    width:100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 40vh;
+    padding: 0px 0px 0px 0px;
+  }
+  .para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center; /* To center-align the text within the <p> element */
+  }
+  
+  .para span {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .para p {
+    width:80vw;
+    margin-top: 10px;
+   
+  }
+  
+  .main{
+    display: flex;
+    flex-direction: column; 
+    gap:1rem;
   }
 
-  .btn {
-    margin-left: 4px;
-    margin-right: 4px;
+  .front .para p{
+    margin-top: 0%;
   }
-
-  #homeb {
-    margin-left: 0;
-  }
+  
 }
-.imghover {
-  width: 75vw;
-  border-radius: 25px;
-}
-.imghovercontainer {
-  text-align: center;
-  margin-top: 3rem;
-}
-.imghover:hover{
-   /* cursor:url('./images/valscologo.png') , pointer; */
-  /* cursor:pointer; */
-}
-
-

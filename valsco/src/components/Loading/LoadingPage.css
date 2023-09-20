@@ -2,10 +2,10 @@
   margin: 0;
 }
 
-body {
+/* body {
   height: 100vh;
   overflow-x: hidden;
-}
+} */
 
 .load-container {
   display: flex;
@@ -21,6 +21,10 @@ body {
   /* animation-fill-mode: forwards; */
 }
 
+.plan {
+  overflow-y: hidden;
+}
+
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -33,7 +37,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1600px) {
+@media only screen and (min-width: 992px) and (max-width: 2000px) {
   span {
     padding-right: 20px;
   }
@@ -42,11 +46,6 @@ body {
     text-align: center;
     font-size: 100px;
     padding-top: 280px;
-  }
-
-  .body {
-    height: 200vh;
-    background-color: cadetblue;
   }
 
   /* Loading animation */
@@ -78,7 +77,7 @@ body {
     color: black;
     height: 100vh;
     animation: fade 3000ms;
-    font-size: 100px;
+    font-size: 120px;
     margin-left: 50vw;
     font-weight: bolder;
     padding-top: 273px;
@@ -179,21 +178,21 @@ body {
     padding-right: 15px;
   }
 
-  body {
+  /* body {
     overflow-y: hidden;
     overflow-x: hidden;
-  }
+  } */
 
   .head {
     text-align: center;
     font-size: 100px;
     padding-top: 280px;
   }
-
+  /* 
   .body {
     height: 200vh;
     background-color: cadetblue;
-  }
+  } */
 
   /* Loading animation */
 
@@ -325,10 +324,10 @@ body {
     padding-right: 10px;
   }
 
-  body {
+  /* body {
     overflow-y: hidden;
     overflow-x: hidden;
-  }
+  } */
 
   .head {
     text-align: center;
@@ -336,10 +335,10 @@ body {
     padding-top: 280px;
   }
 
-  .body {
+  /* .body {
     height: 200vh;
     background-color: cadetblue;
-  }
+  } */
 
   /* Loading animation */
 
@@ -370,7 +369,7 @@ body {
     color: black;
     height: 100vh;
     animation: fade 3000ms;
-    font-size: 100px;
+    font-size: 90px;
     margin-left: 40vw;
     font-weight: bolder;
     padding-top: 273px;
@@ -470,11 +469,11 @@ body {
   span {
     padding-right: 8px;
   }
-
+  /* 
   body {
     overflow-y: hidden;
     overflow-x: hidden;
-  }
+  } */
 
   .head {
     text-align: center;
@@ -482,9 +481,145 @@ body {
     padding-top: 280px;
   }
 
-  .body {
+  /* .body {
     height: 200vh;
     background-color: cadetblue;
+  } */
+
+  /* Loading animation */
+
+  .loading {
+    background-color: white;
+    height: 100vh;
+    /* padding-left: 400px; */
+  }
+
+  .box {
+    animation: small ease-in-out 800ms;
+    height: 100vh;
+    background-color: black;
+  }
+
+  @keyframes small {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(0.5, 0);
+    }
+  }
+
+  .text {
+    display: none;
+    color: black;
+    height: 100vh;
+    animation: fade 3000ms;
+    font-size: 55px;
+    margin-left: 50vw;
+    font-weight: bolder;
+    padding-top: 273px;
+    animation: moveLeft 700ms ease-in;
+    margin-right: 5vw;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .center {
+    font-size: 55px;
+  }
+
+  .pos {
+    font-size: 55px;
+    margin-left: 24vw;
+    color: black;
+    height: 100vh;
+    font-weight: bolder;
+    padding-top: 273px;
+  }
+
+  @keyframes moveLeft {
+    0% {
+      margin-left: 50vw;
+    }
+
+    100% {
+      margin-left: 24vw;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show0 {
+    display: inline;
+    animation: slow ease-in-out 1000ms;
+  }
+
+  .show1 {
+    display: inline;
+    animation: slow ease-in-out 1000ms;
+  }
+
+  .show2 {
+    display: inline;
+    animation: slow ease-in-out 1000ms;
+  }
+
+  .show3 {
+    display: inline;
+    animation: slow ease-in-out 1000ms;
+  }
+
+  .show4 {
+    display: inline;
+    animation: slow ease-in-out 1000ms;
+  }
+
+  @keyframes slow {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .full {
+    animation: fadeOut ease-in-out 1000ms;
+    opacity: 0;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  span {
+    padding-right: 8px;
+  }
+
+  .head {
+    text-align: center;
+    font-size: 100px;
+    padding-top: 280px;
   }
 
   /* Loading animation */
@@ -516,7 +651,7 @@ body {
     color: black;
     height: 100vh;
     animation: fade 3000ms;
-    font-size: 100px;
+    font-size: 36px;
     margin-left: 50vw;
     font-weight: bolder;
     padding-top: 273px;
@@ -535,11 +670,11 @@ body {
   }
 
   .center {
-    font-size: 50px;
+    font-size: 36px;
   }
 
   .pos {
-    font-size: 50px;
+    font-size: 36px;
     margin-left: 24vw;
     color: black;
     height: 100vh;

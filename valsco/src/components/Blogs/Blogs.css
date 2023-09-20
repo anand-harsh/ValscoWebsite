@@ -1,0 +1,339 @@
+/* @import url("animate.css"); */
+       
+#row1{
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    justify-content: space-around;
+    height: 65px;
+  }
+  .heading{
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #homeb{
+     padding-left: 25px;
+    padding-right: 25px;
+    transition: 1s,background-color 1.5s, color 1s, font-weight 1s, border-radius 1.5s;
+  }
+  #homeb:hover{
+    background: hsla(191, 75%, 60%, 1);
+  
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+    color:aliceblue;
+    font-weight: bold;
+    border-radius: 50px;
+    transform: scale(1.3);
+    box-shadow : 2px 2px 2px rgb(0, 37, 149);
+    z-index:2;
+  }
+  #contactus{
+    background: hsla(191, 75%, 60%, 1);
+  
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+    color: aliceblue;
+    transition: 1s,background-color 1s, color 1s, font-weight 1s, border-radius 1s;
+  }
+  #contactus:hover{
+    background-color: aliceblue;
+    font-weight: bold;
+    border-radius: 50px;
+    transform: scale(1.3);
+    box-shadow : 2px 2px 2px rgb(0, 37, 149);
+    z-index:2;
+  }
+  #productsb{
+    transition: 1s,background-color 1s, color 1s, font-weight 1s, border-radius 1s;
+  }
+  #productsb:hover{
+    background: hsla(191, 75%, 60%, 1);
+  
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+    color:aliceblue;
+    font-weight: bold;
+    border-radius: 50px;
+    transform: scale(1.3);
+    box-shadow : 2px 2px 2px rgb(0, 37, 149);
+    z-index:2;
+  }
+  #aboutusb{
+    transition: 1s, background-color 1s, color 1s, font-weight 1s, border-radius 1s;
+  }
+  #aboutusb:hover{
+    background: hsla(191, 75%, 60%, 1);
+  
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+    color:aliceblue;
+    font-weight: bold;
+    border-radius: 50px;
+    transform: scale(1.3);
+    box-shadow : 2px 2px 2px rgb(0, 37, 149);
+    z-index:2;
+  }
+  #tl{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+  }
+  #coll{
+    height: 100%;
+  }
+  .navbar-toggler{
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .a{
+        display: none;
+    } #tl{
+        height: 110%;
+        width: 110%;
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 200%;
+    }
+    .heading{
+        font-size: large;
+    }
+    .up{
+        text-align: center;
+    }
+    .navbar-toggler{
+    display: contents;
+  }
+  #aboutusb:hover{
+  background: hsla(191, 75%, 60%, 1);
+  
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+  color:aliceblue;
+  font-weight: bold;
+  transform: scale(1.0);
+  }
+  #productsb:hover{
+  background: hsla(191, 75%, 60%, 1);
+  
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+  color:aliceblue;
+  font-weight: bold;
+  transform: scale(1.0);
+  }
+  #contactus{
+    background: hsla(191, 75%, 60%, 1);
+  
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+    background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+    color: aliceblue;
+    transition: 1s,background-color 1s, color 1s, font-weight 1s, border-radius 1s;
+  }
+  #contactus:hover{
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    transform: scale(1.0);
+  }
+  #homeb:hover{
+  background: hsla(191, 75%, 60%, 1);
+  
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DC9E6", endColorstr="#210CAE", GradientType=1 );
+  color:aliceblue;
+  font-weight: bold;
+  transform: scale(1.0);
+  }
+  .bg-white{
+    display: flex;
+  }
+  .btn{
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  #homeb{
+    margin-left: 0;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    color: white;
+  }
+  #login-img{
+    width: 150px;
+  }
+  #google-img{
+    width: 30px;
+  }
+  .login-btn:hover{
+    box-shadow: 0px 0px 10px 3px grey;
+  }
+  .login-div{
+    width: 400px;
+  }
+  
+  @media screen and (max-width:450px) {
+  
+    .login-div{
+      width: 280px;
+    }
+    
+  }
+  .title-blog{
+    width: 500px;
+    height: 50px;
+  }
+  .type-blog{
+    width: 500px;
+    height: 200px;
+  }
+  
+  @media screen and (max-width:550px) {
+  
+    .title-blog{
+      width: 290px;
+      height: 40px;
+    }
+    .type-blog{
+      width: 290px;
+      height: 100px;
+    }
+    
+  }
+  
+  .blog-card{
+    width: 400px;
+    height: 350px;
+  }
+  .blog-description{
+     height: 300px;
+  }
+  
+  .blog-section{
+    width: 900px;
+  }
+  #valsco-logo{
+    width: 50px;
+  }
+  .blog-card{
+    width: 350px;
+    height: 350px;
+  }
+  
+  
+  /* .detailed-blog{
+    width: 600px;
+  } */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* .main-swiper {
+    margin: 40px 0;
+  } */
+  
+  
+  
+   /* .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  } */
+  
+  /* .swiper-slide {
+    background-position: center;
+    margin-left: 250px;
+    max-width: 50%;
+    height: 300px;
+  }  */
+  
+  /* .swiper-slide img {
+    display: block;
+    width: 30%;
+  } */
+  /* body{
+    background-color: black;
+    } */
+  
+    .swiperslide{
+      max-width: 30%;
+    }
+  Swiper{
+    background-position: center;
+  }
+    @media screen and (max-width:500px) {
+  
+      .swiperslide{
+        max-width: 80%;
+      }
+      
+    }
+  
+   @media screen and (max-width:420px) {
+  
+    .blog-card{
+      font-size: 13px;
+      width: 400px;
+      height: 320px;
+    }
+   
+    
+   }
+  
+  

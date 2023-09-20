@@ -65,7 +65,7 @@ function App() {
             </div>
             <div className="col-md-3 up">
               <div className="heading">
-                Valsco Solutions
+                Valsco Technology
               </div>
             </div>
             <div className="col-1 offset-3 a" id="home">
