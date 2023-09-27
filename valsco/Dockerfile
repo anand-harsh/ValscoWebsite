@@ -1,5 +1,5 @@
 FROM node:alpine3.18 as nodework
-WORKDIR /valscotech
+WORKDIR /valsco
 COPY package.json yarn.lock ./
 RUN yarn install
 COPY . .
