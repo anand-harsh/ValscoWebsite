@@ -25,8 +25,8 @@ jobs:
           node-version: '16.x'
           registry-url: https://registry.npmjs.org/
       - run: cd valsco
-      - run: npm run build
-      - run: npm run start
+      - run: npm install
+      - run: npm start
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
