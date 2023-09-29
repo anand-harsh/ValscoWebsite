@@ -26,14 +26,18 @@ jobs:
 
       - name: Change to 'valsco' directory
         run: cd ./valsco
+        working-directory: ./valsco
 
       - name: List files in 'valsco' directory
         run: ls
+        working-directory: ./valsco
 
       - name: Install dependencies in 'valsco' directory
         run: npm i
+        working-directory: ./valsco
 
       - name: Run 'npm start' in 'valsco' directory
         run: npm start
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+        working-directory: ./valsco
