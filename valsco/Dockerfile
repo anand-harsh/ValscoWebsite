@@ -1,13 +1,10 @@
-FROM node:alpine3.18 as nodework
-WORKDIR /valsco
-COPY package.json yarn.lock ./
-RUN yarn install
+FROM node:lts-alpine
+ENV NODE_ENV=production
+WORKDIR /usr/src/app
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --production --silent && mv node_modules ../
 COPY . .
-RUN yarn run build
-
-
-FROM nginx:1.23-alpine
-WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY --from=nodework /valsco/build .
-ENTRYPOINT [ "nginx","-g","daemon off;" ]
+EXPOSE 3000
+RUN chown -R node /usr/src/app
+USER node
+CMD ["npm", "start"]

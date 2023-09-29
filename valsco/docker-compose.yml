@@ -1,7 +1,0 @@
-version: '3'
-services:
-  web:
-    container_name: vt_under_test_container
-    build: .
-    ports:
-      - 3000:80
