@@ -29,7 +29,6 @@ jobs:
 
       - name: Change to 'valsco' directory
         working-directory: ./valsco
-        run: cd valsco
         
 
       - name: List files in 'valsco' directory
