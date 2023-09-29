@@ -25,6 +25,9 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Change to 'valsco' directory
+        run: ls
+
+      - name: Change to 'valsco' directory
         run: cd valsco
         working-directory: valsco
 
