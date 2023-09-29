@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: https://registry.npmjs.org/
-      - run: cd ./valsco
+      - run: cd ./valsco/
       - run: ls
       - run: npm i
       - run: npm start
