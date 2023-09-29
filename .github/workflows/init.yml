@@ -39,7 +39,7 @@ jobs:
 
       - name: Run 'npm start' in 'valsco' directory
         working-directory: ./valsco
-        run: npm start
+        run: docker build . --file Dockerfile --tag .
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
   
