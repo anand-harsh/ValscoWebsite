@@ -25,16 +25,16 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Change to 'valsco' directory
-        run: cd ./valsco
-        working-directory: ./valsco
+        run: cd valsco
+        working-directory: valsco
 
       - name: List files in 'valsco' directory
         run: ls
-        working-directory: ./valsco
+        working-directory: valsco
 
       - name: Install dependencies in 'valsco' directory
         run: npm i
-        working-directory: ./valsco
+        working-directory: valsco
 
       - name: Run 'npm start' in 'valsco' directory
         run: npm start
