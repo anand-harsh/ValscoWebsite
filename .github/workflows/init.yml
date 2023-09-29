@@ -26,11 +26,7 @@ jobs:
 
       - name: Change to 'valsco' directory
         run: ls
-
-      - name: Change to 'valsco' directory
-        working-directory: ./valsco
         
-
       - name: List files in 'valsco' directory
         working-directory: ./valsco
         run: ls
